@@ -4,14 +4,16 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>{{ $title }}</title>
+        <title>@yield('title')</title>
 
         <!-- Styles -->
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
-        <header>
-            <h1><a href="/accueil">Biblio-teckel</a></h1>
+        <header class="header_large">
+            <div>
+                <h1><a href="/accueil">Biblio-teckel</a></h1>
+            </div>
             <nav>
                 <ul>
                     <li><a href="/accueil">Accueil</a></li>
@@ -20,8 +22,13 @@
                 </ul>
             </nav>
         </header>
-
-        {{ $slot }}
-        
+        <div class="container">
+            <div>
+                <h1>@yield('title')</h1>
+            </div>
+            <main>
+                @yield('content')
+            </main>
+        </div>
     </body>
 </html>
