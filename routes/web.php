@@ -14,12 +14,17 @@ use App\Http\Controllers\NavController;
 |
 */
 
+/*
 Route::get('/', function () {
     return view('welcome');
 });
+*/
+Route::get('/', [NavController::class, 'accueil']);
 
 Route::get('accueil', [NavController::class, 'accueil']);
 
 Route::get('contact', [NavController::class, 'contact']);
 
 Route::get('about', [NavController::class, 'about']);
+
+Route::get('catalog', [NavController::class, 'catalog']);
