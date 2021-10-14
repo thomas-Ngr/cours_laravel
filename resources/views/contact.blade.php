@@ -1,7 +1,8 @@
 
-@extends('components/layout')
+@extends('components.layout')
 
 @section('title', 'Contact')
+@section('css', 'form')
 
 @section('content')
 <h1>Ecrivez-moi !</h1>

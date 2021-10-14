@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\NavController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,14 +18,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('accueil', function () {
-    return view('accueil');
-});
+Route::get('accueil', [NavController::class, 'accueil']);
 
-Route::get('contact', function () {
-    return view('contact');
-});
+Route::get('contact', [NavController::class, 'contact']);
 
-Route::get('about', function () {
-    return view('about');
-});
+Route::get('about', [NavController::class, 'about']);

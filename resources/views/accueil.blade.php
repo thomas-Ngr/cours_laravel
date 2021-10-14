@@ -1,6 +1,6 @@
 @extends('components/layout')
 
-@section('title', 'A propos')
+@section('title', 'Accueil')
 
 @section('content')
 <h1>Bienvenue chez moi !</h1>

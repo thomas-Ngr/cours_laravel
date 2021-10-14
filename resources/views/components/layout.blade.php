@@ -8,6 +8,9 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="/css/style.css">
+        @hasSection('css')
+            <link rel="stylesheet" href="/css/@yield('css').css">
+        @endif
     </head>
     <body>
         <header class="header_large">
