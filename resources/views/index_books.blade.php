@@ -6,7 +6,7 @@
 @section('content')
 <h1>Mes livres</h1>
 
-    <div class="table">
+    <div class="card">
         <table>
             <thead>
                 <tr>

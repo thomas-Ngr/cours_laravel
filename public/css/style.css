@@ -57,8 +57,6 @@ header > div:first-child {
     height: 100%;
 }
 
-
-
 nav ul {
     margin: 20px;
     display: flex;
@@ -78,4 +76,11 @@ main {
     height: 100%;
     padding: 20px;
     background-image: linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)), url("/images/books.jpg");
+}
+.card {
+    display: inline-block;
+    padding: 15px;
+    background-color: aliceblue;
+    box-shadow: 3px 3px 3px grey;
+    margin-top: 10px;
 }

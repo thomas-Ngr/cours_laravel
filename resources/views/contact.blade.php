@@ -7,7 +7,7 @@
 @section('content')
 <h1>Ecrivez-moi !</h1>
 <p>Si ce cours pouvait aller un peu plus vite, ce serait cool.</p>
-<form action="">
+<form action="" class="card">
     <div class="form_row">
         <label for="email">Courriel</label>
         <input id="email" type="email" placeholder="example@email.net">

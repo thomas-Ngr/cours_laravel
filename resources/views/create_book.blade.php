@@ -5,7 +5,7 @@
 
 @section('content')
 <h1>Informations</h1>
-<form action="/books" method="POST">
+<form action="/books" method="POST" class="card">
 
     @csrf
 

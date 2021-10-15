@@ -57,7 +57,8 @@ class BookController extends Controller
      */
     public function show($id)
     {
-        //
+        $book = Book::where('id', $id)->first();
+        return view('show_book', ['book' => $book]);
     }
 
     /**
