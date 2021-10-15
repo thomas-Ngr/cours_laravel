@@ -11,5 +11,13 @@ class Book extends Model
     public $timestamps = false;
 
     use HasFactory;
-    
+
+    // allow mass assignment
+    protected $fillable = [
+        'title',
+        'author',
+        'date',
+        'genre',
+        'synopsis',
+    ];
 }

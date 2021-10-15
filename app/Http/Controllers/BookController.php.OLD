@@ -1,0 +1,42 @@
+<?php
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+use App\Http\Controllers\Controller;
+use App\Models\Book;
+
+
+class BookController extends Controller
+{
+    public static function catalog() {
+        $books = Book::all()->sortByDesc('date');
+        return view('catalog', ['books' => $books]);
+    }
+
+    public static function createBookForm() {
+        return view('add_book_form');
+    }
+
+    public static function createBook(Request $request) {
+        // user inputs should be filtered
+        /*
+        $book = Book::create([
+            'title' => $request->input('title'),
+            'author' => $request->input('author'),
+            'date' => $request->input('year'),
+            'genre' => $request->input('genre'),
+            'synopsis' => $request->input('synopsis'),
+        ]);
+        $book->save();
+        */
+        /*
+        //return BookController::catalog();
+        $books = Book::all()->sortByDesc('date');
+        return view('catalog', ['books' => $books]);
+        */
+        //return redirect('/catalog');
+        return view('test', $request->input());
+        
+    }
+}

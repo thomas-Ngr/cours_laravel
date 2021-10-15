@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NavController;
+use App\Http\Controllers\BookController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,17 +15,13 @@ use App\Http\Controllers\NavController;
 |
 */
 
-/*
-Route::get('/', function () {
-    return view('welcome');
-});
-*/
 Route::get('/', [NavController::class, 'accueil']);
-
 Route::get('accueil', [NavController::class, 'accueil']);
-
 Route::get('contact', [NavController::class, 'contact']);
-
 Route::get('about', [NavController::class, 'about']);
 
-Route::get('catalog', [NavController::class, 'catalog']);
+Route::get('books', [BookController::class, 'index']);
+Route::get('books/create', [BookController::class, 'create']);
+Route::post('books', [BookController::class, 'store']);
+Route::get('books/{id}', [BookController::class, 'show']);
+

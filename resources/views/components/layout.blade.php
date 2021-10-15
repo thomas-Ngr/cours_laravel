@@ -22,7 +22,8 @@
                     <li><a href="/accueil">Accueil</a></li>
                     <li><a href="/contact">Contact</a></li>
                     <li><a href="/about">A propos</a></li>
-                    <li><a href="/catalog">Catalogue</a></li>
+                    <li><a href="/books">Catalogue</a></li>
+                    <li><a href="/books/create">Nouveau livre</a></li>
                 </ul>
             </nav>
         </header>
