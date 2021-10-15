@@ -8,7 +8,7 @@
 <p>Publié en : {{ $book->date }}</p>
 <p>Genre : {{ $book->genre }}</p>
 
-<div class="card">
+<div class="card synopsis-card">
     <h3>Résumé</h3>
     <p>
         {{ $book->synopsis }}

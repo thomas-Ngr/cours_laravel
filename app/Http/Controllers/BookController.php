@@ -38,11 +38,11 @@ class BookController extends Controller
     {
 
         $book = Book::create([
-            'title' => $request->input('title'),
-            'author' => $request->input('author'),
-            'date' => $request->input('year'),
-            'genre' => $request->input('genre'),
-            'synopsis' => $request->input('synopsis'),
+            'title' => $request->title,
+            'author' => $request->author,
+            'date' => $request->year,
+            'genre' => $request->genre,
+            'synopsis' => $request->synopsis,
         ]);
         $book->save();
 
@@ -57,7 +57,7 @@ class BookController extends Controller
      */
     public function show($id)
     {
-        $book = Book::where('id', $id)->first();
+        $book = Book::findOrFail($id);
         return view('show_book', ['book' => $book]);
     }
 

@@ -20,8 +20,8 @@ Route::get('accueil', [NavController::class, 'accueil']);
 Route::get('contact', [NavController::class, 'contact']);
 Route::get('about', [NavController::class, 'about']);
 
-Route::get('books', [BookController::class, 'index']);
-Route::get('books/create', [BookController::class, 'create']);
-Route::post('books', [BookController::class, 'store']);
-Route::get('books/{id}', [BookController::class, 'show']);
-
+// Route::get('books', [BookController::class, 'index']);
+// Route::get('books/create', [BookController::class, 'create']);
+// Route::post('books', [BookController::class, 'store']);
+// Route::get('books/{id}', [BookController::class, 'show']);
+Route::resource('books', BookController::class);

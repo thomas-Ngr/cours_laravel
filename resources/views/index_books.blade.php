@@ -14,6 +14,7 @@
                     <th>Auteur</th>
                     <th>Genre</th>
                     <th>Publication</th>
+                    <th>Actions</th>
                 </tr>
             </thead>
             <tbody>
@@ -25,6 +26,7 @@
                     <td>{{ $book->author }}</td>
                     <td>{{ $book->genre }}</td>
                     <td>{{ $book->date }}</td>
+                    <td><button>Modifier</button></td>
                 </tr>
             @endforeach
             </tbody>

@@ -1,9 +1,6 @@
 
-.synopsis_card {
-    display: inline-block;
+.synopsis-card {
     width: 100%;
     max-width: 500px;
-    padding: 15px;
-    background-color: aliceblue;
-    box-shadow: 3px 3px 3px grey;
+
 }
